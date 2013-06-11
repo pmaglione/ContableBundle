@@ -24,7 +24,7 @@ class Cuenta
     private $descripcion;
     
     /**
-     * @ORM\ManyToOne(targetEntity="Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta", cascade={"persist"} )
+     * @ORM\ManyToOne(targetEntity="Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta")
      */
     protected $tipoCuenta;
     
