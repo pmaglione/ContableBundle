@@ -28,7 +28,7 @@ class Cuenta
      */
     protected $tipoCuenta;
     
-    public function __construct($descripcion = null,TipoCuenta $tipoCuenta = null)
+    public function __construct($descripcion = null, $tipoCuenta = null)
     {
         $this->setDescripcion($descripcion);
         $this->setTipoCuenta($tipoCuenta);
