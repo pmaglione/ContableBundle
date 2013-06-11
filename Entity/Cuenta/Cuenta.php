@@ -54,7 +54,7 @@ class Cuenta
         return $this->tipoCuenta;
     }
 
-    public function setTipoCuenta(\Snappminds\Farmacia\ContableBundle\Entity\Cuenta\TipoCuenta $tipoCuenta)
+    public function setTipoCuenta(\Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta $tipoCuenta)
     {
         $this->tipoCuenta = $tipoCuenta;
     }
