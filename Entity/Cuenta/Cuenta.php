@@ -3,7 +3,7 @@
 namespace Snappminds\ContableBundle\Entity\Cuenta;
 
 use Doctrine\ORM\Mapping as ORM;
-use Snappminds\Farmacia\ContableBundle\Entity\Cuenta\TipoCuenta;
+use Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta;
 
 /**
  * @ORM\Entity(repositoryClass="Snappminds\ContableBundle\Entity\Cuenta\CuentaRepository")
@@ -24,7 +24,7 @@ class Cuenta
     private $descripcion;
     
     /**
-     * @ORM\ManyToOne(targetEntity="Snappminds\Farmacia\ContableBundle\Entity\Cuenta\TipoCuenta", cascade={"persist"} )
+     * @ORM\ManyToOne(targetEntity="Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta", cascade={"persist"} )
      */
     protected $tipoCuenta;
     
