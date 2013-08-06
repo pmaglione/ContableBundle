@@ -24,7 +24,7 @@ class Cuenta {
     private $descripcion;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta")
+     * @ORM\ManyToOne(targetEntity="Snappminds\ContableBundle\Entity\TipoCuenta\TipoCuenta", inversedBy="cuentas")
      * @ORM\JoinColumn(name="tipoCuenta_id", referencedColumnName="id")
      */
     protected $tipoCuenta;
