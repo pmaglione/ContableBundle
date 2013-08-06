@@ -25,7 +25,7 @@ abstract class TipoCuenta
     private $descripcion;
     
     /**
-     * @ORM\OneToMany(targetEntity="Snappminds\ContableBundle\Entity\Cuenta\Cuenta", mappedBy="tipoCuenta")
+     * @ORM\OneToMany(targetEntity="Snappminds\ContableBundle\Entity\Cuenta\Cuenta", mappedBy="tipoCuenta", cascade={"persist"})
      */
     protected $cuentas;
     
