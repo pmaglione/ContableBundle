@@ -24,10 +24,10 @@ abstract class TipoCuenta {
      */
     private $descripcion;
 
-    /**
-     * @ORM\OneToMany(targetEntity="Snappminds\ContableBundle\Entity\Cuenta\Cuenta", mappedBy="tipoCuenta")
-     */
-    protected $cuentas;
+//    /**
+//     * @ORM\OneToMany(targetEntity="Snappminds\ContableBundle\Entity\Cuenta\Cuenta", mappedBy="tipoCuenta")
+//     */
+//    protected $cuentas;
 
     public function __construct($descripcion) {
         $this->setDescripcion($descripcion);
@@ -37,13 +37,13 @@ abstract class TipoCuenta {
         return $this->id;
     }
 
-    public function addCuenta(Cuenta $cuenta) {
-        $this->cuentas[] = $cuenta;
-    }
-
-    public function getCuentas() {
-        return $this->cuentas;
-    }
+//    public function addCuenta(Cuenta $cuenta) {
+//        $this->cuentas[] = $cuenta;
+//    }
+//
+//    public function getCuentas() {
+//        return $this->cuentas;
+//    }
 
     public function __toString() {
         return $this->getNombre();
